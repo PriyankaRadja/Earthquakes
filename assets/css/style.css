@@ -1,0 +1,19 @@
+#map {
+  height  : 75%;
+  margin  : 20;
+  padding : 0;
+}
+#text1, #text2, #scaleText {
+  text-align : justify;
+}
+#title { 
+  height           : 6%;
+  margin           : 0;
+  padding          : 0;
+  text-align       : center;
+  color            : white;
+  background-color : #73c2fb;
+}
+html, body {
+  height  : 100%;
+}
