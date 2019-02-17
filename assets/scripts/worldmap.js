@@ -27,7 +27,7 @@ window.eqfeed_callback = function(results)
     var latLng = new google.maps.LatLng(results.features[i].LATITUDE, results.features[i].LONGITUDE);
     popUpText[i]     = "<span> <b> Country: </b>"      + results.features[i].COUNTRY + 
                        "<br/> <b> Year: </b>"   + results.features[i].YEAR + 
-                       "<br/> <b> Damage: </b>" + results.features[i].DAMAGE + "</span>";
+                       "<br/> <b> Damage: </b>$" + results.features[i].DAMAGE + " M</span>";
 
     if (results.features[i].DAMAGE < 1000)
     {

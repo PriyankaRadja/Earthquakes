@@ -24,48 +24,60 @@
 
   <body>
 
-    <div id="title"> <h2> Earthquakes around the world <h2> </div>
+	<header> 
+    	<h2 id="title"> Earthquakes around the world </h2> 
+    </header>
 
-    <div id="map"></div>
+    <section id="map-section">
+    	
+	    <div id="map"></div>
 
-    <div class="col-md-12" id = "scaleText"> 
-      <h6> The markers shown in the map are coloured based on the damage caused by individual earthquakes from <span style = "color: #fa8072; font-weight: bold;"> low</span>, 
-      <span style = "color: #dc143c; font-weight: bold;"> medium </span> to <span style = "color: #8b0000; font-weight: bold;">  high </span> </h6> 
-    </div>
+	    <div class="col-md-12" id = "scaleText"> 
+	      <h6> The markers shown in the map are coloured based on the damage caused by individual earthquakes from <span style = "color: #fa8072; font-weight: bold;"> low</span>, 
+	      <span style = "color: #dc143c; font-weight: bold;"> medium </span> to <span style = "color: #8b0000; font-weight: bold;">  high </span> </h6> 
+	    </div>
 
-    <div class="container">
-      <div class="row">
+	</section>
 
-        <div class="col-md-6" id="text1">
-          <h3> What is an earthquake? </h3> 
-          <h6> (Following content is taken from source: <a href = "https://en.wikipedia.org/wiki/Earthquake"> Wikipedia) </a> </h6>
+	<section id="content"> 
 
-          <p> An earthquake (also known as a quake, tremor or temblor) is the shaking of the surface of the Earth, resulting from the sudden release of energy in the Earth's lithosphere that creates seismic waves. Earthquakes can range in size from those that are so weak that they cannot be felt to those violent enough to toss people around and destroy whole cities. The seismicity, or seismic activity, of an area is the frequency, type and size of earthquakes experienced over a period of time. The word tremor is also used for non-earthquake seismic rumbling.
-          </p>
+	    <div class="container">
+	    	<div class="row">
 
-          <p> At the Earth's surface, earthquakes manifest themselves by shaking and displacing or disrupting the ground. When the epicenter of a large earthquake is located offshore, the seabed may be displaced sufficiently to cause a tsunami. Earthquakes can also trigger landslides, and occasionally volcanic activity.
-          </p>
+			<article>
+		        <div class="col-md-6" id="text1">
+					<h3> General Information </h3> 
 
-          <p> In its most general sense, the word earthquake is used to describe any seismic event—whether natural or caused by humans—that generates seismic waves. Earthquakes are caused mostly by rupture of geological faults, but also by other events such as volcanic activity, landslides, mine blasts, and nuclear tests. An earthquake's point of initial rupture is called its focus or hypocenter. The epicenter is the point at ground level directly above the hypocenter. 
-          </p>
-        </div>
+					<p> The earthquakes data was cleaned after obtaining from the source. The cleaned earthquakes data can be found at assets/data/damage.js. The worldmap.js found in the assets/scripts directory processes the earthquakes data from damage.js to plot on a world map. The simple css accompanying this html project can be found at assets/css/style.css. 
+					</p>
 
-        <div class="col-md-6" id="text2">
-          <h3> What Are Earthquake Hazards? </h3>
-          <h6> (Following content is taken from source: <a href = "http://www.geo.mtu.edu/UPSeis/hazards.html"> Michigan Technological University) </a> </h6>
+					<h3> World Map</h3>
+					<p> The map is displayed with the help of Google maps api. 
+					A single marker represents an individual earthquake incident. Marker clusterer is employed to group multiple earthquakes in close proximity into a single icon. On zooming into the marker cluster, the individual earthquakes are displayed by a single marker for each. The country, year and damage information is extracted from the damage.js file to be displayed as the popup text of each marker. InfoWindow property from google maps api is used to acheive this.
+					</p>
 
-          <p> Earthquakes really pose little direct danger to a person. People can't be shaken to death by an earthquake. Some movies show scenes with the ground suddenly opening up and people falling into fiery pits, but this just doesn't happen in real life.
-          </p>
+					
+		        </div>	
+		    </article>
+    
+		    <article>
+		        <div class="col-md-6" id="text2">
+					<h3> General CSS </h3>
 
-          <p> The first main earthquake hazard (danger) is the effect of ground shaking. Buildings can be damaged by the shaking itself or by the ground beneath them settling to a different level than it was before the earthquake (subsidence).
-          </p>
+					<p> The simple CSS accompanying this html page employs background color to differentiate the sections in the html page. Font colours are also modified to employ contrast in the page. Span poperty was used to apply inline colour properties to the text below the map, which mentions that different colours were used to indicate the intensity of the eathquakes by their respective markers.
+					</p>
 
-          <p> Buildings can even sink into the ground if soil liquefaction occurs. Liquefaction is the mixing of sand or soil and groundwater (water underground) during the shaking of a moderate or strong earthquake. When the water and soil are mixed, the ground becomes very soft and acts similar to quicksand. If liquefaction occurs under a building, it may start to lean, tip over, or sink several feet. The ground firms up again after the earthquake has past and the water has settled back down to its usual place deeper in the ground. Liquefaction is a hazard in areas that have groundwater near the surface and sandy soil.
-          </p>
-        </div>
+					<h3> Map Styling </h3>
+					<p> The map type was set to terrain. The colour of the markers, representing each earthquake, is determined by the intensity of the earthquake, in terms of the damage caused. This is carried out in worldmap.js, where an earthquake which caused a damage of less than $1000 M is assigned a pale red colour for its marker. An earthquake with damage more than $1000 M but less than $30000 M is assigned a medium red colour for its marker and the rest are assigned a dark red.
+					</p>
+					
+		        </div>
+			</article>
 
-      </div>
-    </div>
+	    	</div>
+	    </div>
+
+	</section>
 
   </body>
 </html>

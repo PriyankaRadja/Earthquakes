@@ -1,7 +1,21 @@
 #map {
-  height  : 75%;
-  margin  : 20;
-  padding : 0;
+  height  : 95%;
+}
+#map-section {
+  height           : 75%;
+  padding          : 0.75rem;
+  background-color : #c2d4dd;
+}
+#content {
+  background-color : #e0e2e4;
+}
+#text1 {  
+  background-color : #484f4f;
+  color            : white;
+}
+#text2 {
+  background-color : #484f4f;
+  color            : white;
 }
 #text1, #text2, #scaleText {
   text-align : justify;
@@ -12,7 +26,10 @@
   padding          : 0;
   text-align       : center;
   color            : white;
-  background-color : #73c2fb;
+  background-color : #36486b;
+}
+h3 {
+  color : #87bdd8;
 }
 html, body {
   height  : 100%;
