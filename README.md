@@ -7,6 +7,11 @@ A simple responsive html page using google maps api and bootstrap, which shows t
 
 **Google maps api** is used for illustrating the earthquakes with markers of varying colours (based on the damage caused by the earthquakes) and marker clusters. The webpage is also responsive with the help of bootstrap.
 
+<p float="left">
+  <img src="https://github.com/PriyankaRadja/Earthquakes/blob/master/assets/img/markercluster.png" width="200" height="200" title="Marker clusterers to group earthquakes very close to each other on the map"/>
+  <img src="https://github.com/PriyankaRadja/Earthquakes/blob/master/assets/img/markercluster1.png" width="200" height="200" title="Marker clusterers turn into individual markers on zooming"/> 
+</p>
+
 ![alt text](https://github.com/PriyankaRadja/Earthquakes/blob/master/assets/img/markercluster.png "Marker clusterers to group earthquakes very close to each other on the map")
 
 ![alt text](https://github.com/PriyankaRadja/Earthquakes/blob/master/assets/img/markercluster1.png "Marker clusterers turn into individual markers on zooming")
