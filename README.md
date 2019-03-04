@@ -13,7 +13,7 @@ Google maps api is used for illustrating the earthquakes with markers of varying
   <img src="https://github.com/PriyankaRadja/Earthquakes/blob/master/assets/img/markercluster1.png" width="400" title="Marker clusterers turn into individual markers on zooming"/> 
 </p>
 
-### Other
+## Other
 The earthquakes data is stored in javascript format in assets/data/damage.js and is processed by assets/scripts/worldmap.js script. The simple css accompanying the html file can be found at assets/css/style.css. 
 
 
