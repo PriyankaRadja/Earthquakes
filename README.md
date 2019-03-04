@@ -1,7 +1,7 @@
 # Earthquakes
 A simple responsive html page using google maps api and bootstrap, which shows the different earthquakes around the world along with the year and the damage caused.
 
-![alt text](https://github.com/PriyankaRadja/Earthquakes/tree/master/assets/img/map.png "World map showing earthquakes")
+![alt text](https://github.com/PriyankaRadja/Earthquakes/blob/master/assets/img/map.png "World map showing earthquakes")
 
 ![alt text](https://github.com/PriyankaRadja/Earthquakes/tree/master/assets/img/pop-up.png "Pop-up text dispalying details of the earthquake")
 
